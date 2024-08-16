@@ -15,7 +15,7 @@ class SentencePairsController < ApplicationController
     @sentence_pair = SentencePair.new(sentence_pair_params)
   
     if @sentence_pair.save
-      redirect_to @sentence_pair, notice: "Sentence pair was successfully created."
+      redirect_to result_sentence_pair_path(@sentence_pair), notice: "Sentence pair was successfully created."
     else
       render :new
     end

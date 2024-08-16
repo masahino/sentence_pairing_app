@@ -1,9 +1,13 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# test/fixtures/sentence_pairs.yml
 
 one:
-  japanese_sentence: MyText
-  english_sentence: MyText
+  japanese_sentence: "こんにちは"
+  english_sentence: "Hello"
+  correct_count: 1
+  incorrect_count: 0
 
 two:
-  japanese_sentence: MyText
-  english_sentence: MyText
+  japanese_sentence: "ありがとう"
+  english_sentence: "Thank you"
+  correct_count: 2
+  incorrect_count: 1
