@@ -1,0 +1,2 @@
+module SentencePairsHelper
+end

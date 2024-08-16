@@ -1,0 +1,391 @@
+Info 0    [12:35:37.923] Starting TS Server
+Info 1    [12:35:37.924] Version: 5.0.3
+Info 2    [12:35:37.924] Arguments: /opt/homebrew/Cellar/node/21.7.2/bin/node /Users/masahino/node_modules/typescript/lib/tsserver.js --serverMode partialSemantic --useInferredProjectPerProjectRoot --disableAutomaticTypingAcquisition --cancellationPipeName /private/var/folders/r4/zrv9mrpd1ldbgly664ly_hs00000gn/T/bb9f1897f0be7a51906f4020bb4b3092/tscancellation* --logVerbosity verbose --logFile /Users/masahino/Program/sentence_pairing_app/app/javascript/.log/tsserver-log-hO8M6Y/tsserver.log --locale en --validateDefaultNpmLocation --useNodeIpc
+Info 3    [12:35:37.924] Platform: darwin NodeVersion: v21.7.2 CaseSensitive: false
+Info 4    [12:35:37.924] ServerMode: 1 hasUnknownServerMode: undefined
+Info 5    [12:35:37.929] request:
+    {
+      "seq": 0,
+      "type": "request",
+      "command": "configure",
+      "arguments": {
+        "formatOptions": {
+          "newLineCharacter": "\n"
+        },
+        "preferences": {
+          "allowIncompleteCompletions": false,
+          "allowRenameOfImportPath": true,
+          "allowTextChangesInNewFiles": true,
+          "disableLineTextInReferences": true,
+          "disableSuggestions": true,
+          "displayPartsForJSDoc": true,
+          "generateReturnInDocTemplate": true,
+          "importModuleSpecifierEnding": "auto",
+          "importModuleSpecifierPreference": "shortest",
+          "includeAutomaticOptionalChainCompletions": false,
+          "includeCompletionsForImportStatements": false,
+          "includeCompletionsForModuleExports": false,
+          "includeCompletionsWithClassMemberSnippets": false,
+          "includeCompletionsWithInsertText": false,
+          "includeCompletionsWithObjectLiteralMethodSnippets": false,
+          "includeCompletionsWithSnippetText": false,
+          "includeInlayEnumMemberValueHints": false,
+          "includeInlayFunctionLikeReturnTypeHints": false,
+          "includeInlayFunctionParameterTypeHints": false,
+          "includeInlayParameterNameHints": "none",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": false,
+          "includeInlayVariableTypeHints": false,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includePackageJsonAutoImports": "auto",
+          "jsxAttributeCompletionStyle": "auto",
+          "lazyConfiguredProjectsFromExternalProject": false,
+          "providePrefixAndSuffixTextForRename": true,
+          "provideRefactorNotApplicableReason": true,
+          "quotePreference": "auto",
+          "useLabelDetailsInCompletionEntries": false
+        }
+      }
+    }
+Info 6    [12:35:37.929] Format host information updated
+Info 7    [12:35:37.929] response:
+    {"seq":0,"type":"response","command":"configure","request_seq":0,"success":true}
+Perf 8    [12:35:37.929] 0::configure: async elapsed time (in milliseconds) 0.5316
+Info 9    [12:35:37.930] request:
+    {
+      "seq": 1,
+      "type": "request",
+      "command": "open",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "fileContent": "// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails\nimport \"@hotwired/turbo-rails\"\nimport \"controllers\"\n",
+        "scriptKindName": "JS",
+        "projectRootPath": "/Users/masahino/Program/sentence_pairing_app/app/javascript"
+      }
+    }
+Info 10   [12:35:37.933] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 11   [12:35:38.133] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 200.095375ms
+Info 12   [12:35:38.133] Project '/dev/null/inferredProject1*' (Inferred)
+Info 13   [12:35:38.134] 	Files (8)
+	/Users/masahino/node_modules/typescript/lib/lib.d.ts
+	/Users/masahino/node_modules/typescript/lib/lib.es5.d.ts
+	/Users/masahino/node_modules/typescript/lib/lib.dom.d.ts
+	/Users/masahino/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+	/Users/masahino/node_modules/typescript/lib/lib.scripthost.d.ts
+	/Users/masahino/node_modules/typescript/lib/lib.decorators.d.ts
+	/Users/masahino/node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js
+
+
+	../../../../node_modules/typescript/lib/lib.d.ts
+	  Default library for target 'es5'
+	../../../../node_modules/typescript/lib/lib.es5.d.ts
+	  Library referenced via 'es5' from file '../../../../node_modules/typescript/lib/lib.d.ts'
+	../../../../node_modules/typescript/lib/lib.dom.d.ts
+	  Library referenced via 'dom' from file '../../../../node_modules/typescript/lib/lib.d.ts'
+	../../../../node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+	  Library referenced via 'webworker.importscripts' from file '../../../../node_modules/typescript/lib/lib.d.ts'
+	../../../../node_modules/typescript/lib/lib.scripthost.d.ts
+	  Library referenced via 'scripthost' from file '../../../../node_modules/typescript/lib/lib.d.ts'
+	../../../../node_modules/typescript/lib/lib.decorators.d.ts
+	  Library referenced via 'decorators' from file '../../../../node_modules/typescript/lib/lib.es5.d.ts'
+	../../../../node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	  Library referenced via 'decorators.legacy' from file '../../../../node_modules/typescript/lib/lib.es5.d.ts'
+	application.js
+	  Root file specified for compilation
+
+Info 14   [12:35:38.134] -----------------------------------------------
+Info 15   [12:35:38.134] Project '/dev/null/inferredProject1*' (Inferred)
+Info 15   [12:35:38.134] 	Files (8)
+
+Info 15   [12:35:38.134] -----------------------------------------------
+Info 15   [12:35:38.134] Open files: 
+Info 15   [12:35:38.134] 	FileName: /Users/masahino/Program/sentence_pairing_app/app/javascript/application.js ProjectRootPath: /Users/masahino/Program/sentence_pairing_app/app/javascript
+Info 15   [12:35:38.134] 		Projects: /dev/null/inferredProject1*
+Perf 15   [12:35:38.134] 1::open: async elapsed time (in milliseconds) 204.0377
+Info 16   [12:35:40.233] request:
+    {
+      "seq": 2,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 3,
+        "offset": 21,
+        "endLine": 3,
+        "endOffset": 21,
+        "insertString": "\n"
+      }
+    }
+Perf 17   [12:35:40.234] 2::change: async elapsed time (in milliseconds) 1.0522
+Info 18   [12:35:40.424] request:
+    {
+      "seq": 3,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 1,
+        "endLine": 4,
+        "endOffset": 1,
+        "insertString": "i"
+      }
+    }
+Perf 19   [12:35:40.427] 3::change: async elapsed time (in milliseconds) 2.6476
+Info 20   [12:35:40.586] request:
+    {
+      "seq": 4,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 2,
+        "endLine": 4,
+        "endOffset": 2,
+        "insertString": "m"
+      }
+    }
+Perf 21   [12:35:40.586] 4::change: async elapsed time (in milliseconds) 0.2545
+Info 22   [12:35:40.724] request:
+    {
+      "seq": 5,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 3,
+        "endLine": 4,
+        "endOffset": 3,
+        "insertString": "p"
+      }
+    }
+Perf 23   [12:35:40.724] 5::change: async elapsed time (in milliseconds) 0.2231
+Info 24   [12:35:40.796] request:
+    {
+      "seq": 6,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 4,
+        "endLine": 4,
+        "endOffset": 4,
+        "insertString": "o"
+      }
+    }
+Perf 25   [12:35:40.796] 6::change: async elapsed time (in milliseconds) 0.1422
+Info 26   [12:35:40.949] request:
+    {
+      "seq": 7,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 5,
+        "endLine": 4,
+        "endOffset": 5,
+        "insertString": "r"
+      }
+    }
+Perf 27   [12:35:40.950] 7::change: async elapsed time (in milliseconds) 0.4480
+Info 28   [12:35:41.134] request:
+    {
+      "seq": 8,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 6,
+        "endLine": 4,
+        "endOffset": 6,
+        "insertString": "t"
+      }
+    }
+Perf 29   [12:35:41.135] 8::change: async elapsed time (in milliseconds) 0.5432
+Info 30   [12:35:41.300] request:
+    {
+      "seq": 9,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 7,
+        "endLine": 4,
+        "endOffset": 7,
+        "insertString": " "
+      }
+    }
+Perf 31   [12:35:41.301] 9::change: async elapsed time (in milliseconds) 0.2503
+Info 32   [12:35:41.624] request:
+    {
+      "seq": 10,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 8,
+        "endLine": 4,
+        "endOffset": 8,
+        "insertString": "\""
+      }
+    }
+Perf 33   [12:35:41.626] 10::change: async elapsed time (in milliseconds) 1.4593
+Info 34   [12:35:42.235] request:
+    {
+      "seq": 11,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 9,
+        "endLine": 4,
+        "endOffset": 9,
+        "insertString": "b"
+      }
+    }
+Perf 35   [12:35:42.236] 11::change: async elapsed time (in milliseconds) 1.0794
+Info 36   [12:35:42.416] request:
+    {
+      "seq": 12,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 10,
+        "endLine": 4,
+        "endOffset": 10,
+        "insertString": "o"
+      }
+    }
+Perf 37   [12:35:42.417] 12::change: async elapsed time (in milliseconds) 0.5179
+Info 38   [12:35:42.550] request:
+    {
+      "seq": 13,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 11,
+        "endLine": 4,
+        "endOffset": 11,
+        "insertString": "o"
+      }
+    }
+Perf 39   [12:35:42.551] 13::change: async elapsed time (in milliseconds) 0.2279
+Info 40   [12:35:42.688] request:
+    {
+      "seq": 14,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 12,
+        "endLine": 4,
+        "endOffset": 12,
+        "insertString": "t"
+      }
+    }
+Perf 41   [12:35:42.689] 14::change: async elapsed time (in milliseconds) 0.4625
+Info 42   [12:35:42.945] request:
+    {
+      "seq": 15,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 13,
+        "endLine": 4,
+        "endOffset": 13,
+        "insertString": "s"
+      }
+    }
+Perf 43   [12:35:42.946] 15::change: async elapsed time (in milliseconds) 0.4580
+Info 44   [12:35:43.128] request:
+    {
+      "seq": 16,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 14,
+        "endLine": 4,
+        "endOffset": 14,
+        "insertString": "t"
+      }
+    }
+Perf 45   [12:35:43.128] 16::change: async elapsed time (in milliseconds) 0.4956
+Info 46   [12:35:43.374] request:
+    {
+      "seq": 17,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 15,
+        "endLine": 4,
+        "endOffset": 15,
+        "insertString": "r"
+      }
+    }
+Perf 47   [12:35:43.375] 17::change: async elapsed time (in milliseconds) 0.3701
+Info 48   [12:35:43.454] request:
+    {
+      "seq": 18,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 16,
+        "endLine": 4,
+        "endOffset": 16,
+        "insertString": "a"
+      }
+    }
+Perf 49   [12:35:43.454] 18::change: async elapsed time (in milliseconds) 0.2031
+Info 50   [12:35:43.585] request:
+    {
+      "seq": 19,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 17,
+        "endLine": 4,
+        "endOffset": 17,
+        "insertString": "p"
+      }
+    }
+Perf 51   [12:35:43.586] 19::change: async elapsed time (in milliseconds) 0.3320
+Info 52   [12:35:43.860] request:
+    {
+      "seq": 20,
+      "type": "request",
+      "command": "change",
+      "arguments": {
+        "file": "/Users/masahino/Program/sentence_pairing_app/app/javascript/application.js",
+        "line": 4,
+        "offset": 18,
+        "endLine": 4,
+        "endOffset": 18,
+        "insertString": "\""
+      }
+    }
+Perf 53   [12:35:43.860] 20::change: async elapsed time (in milliseconds) 0.0941
+Info 54   [12:35:45.612] Exiting...

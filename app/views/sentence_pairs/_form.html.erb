@@ -1,0 +1,18 @@
+<!-- app/views/sentence_pairs/_form.html.erb -->
+
+<%= form_with(model: @sentence_pair, local: true) do |form| %>
+  <div class="mb-3">
+    <%= form.label :japanese_sentence, "Japanese Sentence", class: "form-label" %>
+    <%= form.text_area :japanese_sentence, class: "form-control", rows: 3 %>
+  </div>
+  
+  <div class="mb-3">
+    <%= form.label :english_sentence, "English Sentence", class: "form-label" %>
+    <%= form.text_area :english_sentence, class: "form-control", rows: 3 %>
+  </div>
+
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <%= form.submit submit_text, class: "btn btn-primary btn-lg" %>
+    <%= link_to "Back", sentence_pair_list_path, class: "btn btn-secondary btn-lg ms-2" %>
+  </div>
+<% end %>

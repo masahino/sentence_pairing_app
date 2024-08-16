@@ -1,0 +1,35 @@
+<!-- app/views/sentence_pairs/index.html.erb -->
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title">Translate this sentence:</h2>
+          <p class="card-text fs-4"><%= @sentence_pair.japanese_sentence %></p>
+
+          <%= form_with(url: check_answer_sentence_pair_path(@sentence_pair), local: true, method: :post) do %>
+            <div class="mb-3">
+              <%= label_tag :english_sentence, "Your translation", class: "form-label" %>
+              <%= text_field_tag :english_sentence, nil, class: "form-control" %>
+            </div>
+
+            <div class="d-grid gap-2">
+              <%= submit_tag "Submit", class: "btn btn-primary btn-lg" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <!-- 新しいペアを登録するボタン -->
+      <div class="mt-4 d-grid gap-2">
+        <%= link_to "Add New Sentence Pair", new_sentence_pair_path, class: "btn btn-secondary btn-lg" %>
+      </div>
+
+      <!-- リスト画面へのリンクボタン -->
+      <div class="mt-2 d-grid gap-2">
+        <%= link_to "View Sentence Pair List", sentence_pair_list_path, class: "btn btn-secondary btn-lg" %>
+      </div>
+    </div>
+  </div>
+</div>

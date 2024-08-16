@@ -1,0 +1,29 @@
+<!-- app/views/sentence_pairs/result.html.erb -->
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <% if flash[:notice] %>
+            <div class="alert alert-success">
+              <%= flash[:notice] %>
+            </div>
+          <% elsif flash[:alert] %>
+            <div class="alert alert-danger">
+              <%= flash[:alert] %>
+            </div>
+          <% end %>
+
+          <h3 class="card-title">Translate this sentence:</h3>
+          <p class="card-text fs-4"><%= @sentence_pair.japanese_sentence %></p>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+            <%= link_to "Try Another", root_path, class: "btn btn-primary btn-lg" %>
+            <%= link_to "View Sentence Pair List", sentence_pair_list_path, class: "btn btn-secondary btn-lg ms-2" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

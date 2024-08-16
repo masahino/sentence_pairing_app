@@ -1,0 +1,44 @@
+<!-- app/views/sentence_pairs/list.html.erb -->
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title">Sentence Pairs List</h2>
+
+          <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th>Japanese Sentence</th>
+                <th>English Sentence</th>
+                <th>Correct Count</th>
+                <th>Incorrect Count</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @sentence_pairs.each do |sentence_pair| %>
+                <tr>
+                  <td><%= sentence_pair.japanese_sentence %></td>
+                  <td><%= sentence_pair.english_sentence %></td>
+                  <td><%= sentence_pair.correct_count %></td>
+                  <td><%= sentence_pair.incorrect_count %></td>
+                  <td>
+                    <%= link_to "Edit", edit_sentence_pair_path(sentence_pair), class: "btn btn-secondary btn-sm" %>
+                    <%= link_to "Delete", sentence_pair, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-sm" %>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+            <%= link_to "Add New Sentence Pair", new_sentence_pair_path, class: "btn btn-primary btn-lg" %>
+            <%= link_to "Back to Translation Practice", root_path, class: "btn btn-secondary btn-lg ms-2" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
