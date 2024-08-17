@@ -24,10 +24,6 @@ class SentencePairsController < ApplicationController
   def show
   end
 
-  def index
-    @sentence_pair = SentencePair.order("RANDOM()").first
-  end
-
   def list
     @sentence_pairs = SentencePair.all
   end
