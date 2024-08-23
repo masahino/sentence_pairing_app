@@ -37,7 +37,7 @@ class SentencePairTest < ActiveSupport::TestCase
   test "should sanitize sentences" do
     sentence_pair = SentencePair.new(japanese_sentence: "<script>alert('xss');</script>", english_sentence: "<script>alert('xss');</script>")
     sentence_pair.save
-    refute_match /<script>/, sentence_pair.japanese_sentence
-    refute_match /<script>/, sentence_pair.english_sentence
+    assert_no_match /<script>/, sentence_pair.japanese_sentence
+    assert_no_match /<script>/, sentence_pair.english_sentence
   end
 end

@@ -13,7 +13,7 @@ class SentencePairsController < ApplicationController
 
   def create
     @sentence_pair = SentencePair.new(sentence_pair_params)
-  
+
     if @sentence_pair.save
       redirect_to result_sentence_pair_path(@sentence_pair), notice: "Sentence pair was successfully created."
     else

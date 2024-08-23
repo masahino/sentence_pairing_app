@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   resources :sentence_pairs do
     member do
-      post 'check_answer'  # 個別のsentence_pairに対して回答をチェックするルート
-      get 'result'  # 結果を表示するルート
+      post "check_answer"  # 個別のsentence_pairに対して回答をチェックするルート
+      get "result"  # 結果を表示するルート
     end
   end
 

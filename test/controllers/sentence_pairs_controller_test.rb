@@ -14,7 +14,7 @@ class SentencePairsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create sentence_pair" do
-    assert_difference('SentencePair.count', 1) do
+    assert_difference("SentencePair.count", 1) do
       post sentence_pairs_path, params: { sentence_pair: { japanese_sentence: "ありがとう", english_sentence: "Thank you" } }
     end
     assert_redirected_to result_sentence_pair_path(SentencePair.last)
@@ -29,7 +29,7 @@ class SentencePairsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy sentence_pair" do
-    assert_difference('SentencePair.count', -1) do
+    assert_difference("SentencePair.count", -1) do
       delete sentence_pair_path(@sentence_pair)
     end
     assert_redirected_to sentence_pair_list_path
