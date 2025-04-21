@@ -37,7 +37,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Gemfile
-gem "bootstrap", "~> 5.3.0" # 最新バージョンを確認してください
+gem "bootstrap", "~> 5.3.5" # 最新バージョンを確認してください
 gem "sassc-rails"
 
 group :development, :test do
